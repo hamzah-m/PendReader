@@ -36,6 +36,9 @@
                                     <segment title="1Y"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="periodSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="J9v-nL-Ie8"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temperature (f)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-4a-lBI">
                                 <rect key="frame" x="129" y="101" width="116" height="21"/>
@@ -106,11 +109,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Aj2-8f-Xd1">
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aj2-8f-Xd1">
                                 <rect key="frame" x="0.0" y="386" width="375" height="216"/>
-                                <date key="date" timeIntervalSinceReferenceDate="523968083.38026702">
-                                    <!--2017-08-09 10:41:23 +0000-->
+                                <date key="date" timeIntervalSinceReferenceDate="347061600.38026428">
+                                    <!--2011-12-31 22:00:00 +0000-->
                                 </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="347061600">
+                                    <!--2011-12-31 22:00:00 +0000-->
+                                </date>
+                                <date key="maximumDate" timeIntervalSinceReferenceDate="378683999">
+                                    <!--2012-12-31 21:59:59 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePicker:" destination="BYZ-38-t0r" eventType="valueChanged" id="W76-Ay-HR1"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -146,6 +158,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="Aj2-8f-Xd1" id="YFa-2z-ocf"/>
+                        <outlet property="periodSegment" destination="hFB-jd-1xB" id="T3i-mM-5av"/>
                         <outlet property="pressureLabel" destination="5Xq-vy-izF" id="dNc-Zw-YhH"/>
                         <outlet property="tempLabel" destination="fXz-gd-3xA" id="BDC-kJ-s8b"/>
                         <outlet property="windspeedLabel" destination="roZ-FZ-sPL" id="dNc-vQ-iu1"/>
