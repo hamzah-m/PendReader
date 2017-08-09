@@ -33,7 +33,7 @@
                                 <segments>
                                     <segment title="1D"/>
                                     <segment title="1W"/>
-                                    <segment title="1Y"/>
+                                    <segment title="1M"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
