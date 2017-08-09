@@ -284,6 +284,7 @@
 				CODE_SIGN_ENTITLEMENTS = PendReader/PendReader.entitlements;
 				DEVELOPMENT_TEAM = Y42DA4P669;
 				INFOPLIST_FILE = PendReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamzahmugharbil.PendReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +299,7 @@
 				CODE_SIGN_ENTITLEMENTS = PendReader/PendReader.entitlements;
 				DEVELOPMENT_TEAM = Y42DA4P669;
 				INFOPLIST_FILE = PendReader/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamzahmugharbil.PendReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -324,6 +326,7 @@
 				B5D660CE1F3B1C5C0076164F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
