@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var pressureLabel: UILabel!
+    @IBOutlet weak var windspeedLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

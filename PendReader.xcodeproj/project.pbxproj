@@ -12,6 +12,7 @@
 		B5D660C31F3B1C5C0076164F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D660C11F3B1C5C0076164F /* Main.storyboard */; };
 		B5D660C51F3B1C5C0076164F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5D660C41F3B1C5C0076164F /* Assets.xcassets */; };
 		B5D660C81F3B1C5C0076164F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5D660C61F3B1C5C0076164F /* LaunchScreen.storyboard */; };
+		B5D660D21F3B22010076164F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D660D11F3B22010076164F /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		B5D660C41F3B1C5C0076164F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5D660C71F3B1C5C0076164F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5D660C91F3B1C5C0076164F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5D660CF1F3B21FF0076164F /* PendReader.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PendReader.entitlements; sourceTree = "<group>"; };
+		B5D660D11F3B22010076164F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D660D21F3B22010076164F /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +44,7 @@
 			children = (
 				B5D660BC1F3B1C5C0076164F /* PendReader */,
 				B5D660BB1F3B1C5C0076164F /* Products */,
+				B5D660D01F3B22010076164F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +59,7 @@
 		B5D660BC1F3B1C5C0076164F /* PendReader */ = {
 			isa = PBXGroup;
 			children = (
+				B5D660CF1F3B21FF0076164F /* PendReader.entitlements */,
 				B5D660BD1F3B1C5C0076164F /* AppDelegate.swift */,
 				B5D660BF1F3B1C5C0076164F /* ViewController.swift */,
 				B5D660C11F3B1C5C0076164F /* Main.storyboard */,
@@ -62,6 +68,14 @@
 				B5D660C91F3B1C5C0076164F /* Info.plist */,
 			);
 			path = PendReader;
+			sourceTree = "<group>";
+		};
+		B5D660D01F3B22010076164F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5D660D11F3B22010076164F /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +112,14 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Y42DA4P669;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -259,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PendReader/PendReader.entitlements;
 				DEVELOPMENT_TEAM = Y42DA4P669;
 				INFOPLIST_FILE = PendReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -272,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PendReader/PendReader.entitlements;
 				DEVELOPMENT_TEAM = Y42DA4P669;
 				INFOPLIST_FILE = PendReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
